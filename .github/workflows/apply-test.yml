@@ -2,7 +2,7 @@ name: 'Terragrunt GitHub Actions'
 on:
   pull_request:
        branches:
-         - Test
+         - test
 env:
   tf_version: 'latest'
   tg_version: 'latest'
