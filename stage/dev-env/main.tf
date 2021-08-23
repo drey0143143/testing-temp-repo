@@ -26,3 +26,7 @@ tags = {
  Name = "Dev"
 }
 }
+
+terraform {
+  backend "s3" {}
+}
