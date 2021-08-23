@@ -17,15 +17,6 @@ resource "aws_kms_alias" "a" {
   target_key_id = aws_kms_key.abcdef.key_id
 }
 
-resource "aws_subnet" "GitAction-subnet" {
- vpc_id     = aws_vpc.test.id
- cidr_block = "10.0.1.0/24"
-
- tags = {
-  Name = "Dev"
-}
-}
-
 terraform {
   backend "s3" {}
 }
