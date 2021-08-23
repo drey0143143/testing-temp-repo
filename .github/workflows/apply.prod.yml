@@ -1,6 +1,6 @@
 name: 'Terragrunt GitHub Actions'
 on:
-  push:
+  pull_request:
    branches:
      - production
 env:
