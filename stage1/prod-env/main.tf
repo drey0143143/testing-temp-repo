@@ -19,10 +19,14 @@ resource "aws_kms_alias" "a" {
 
 
 resource "aws_subnet" "GitAction-subnet" {
-    vpc_id = aws_vpc.test.id
-    cidr_block = "10.0.1.0/24"
+ vpc_id     = aws_vpc.test.id
+ cidr_block = "10.0.1.0/24"
 
-    tags = {
-        Name = "Testing"
-    }
+tags = {
+ Name = "Dev"
+}
+}
+
+terraform {
+  backend "s3" {}
 }
