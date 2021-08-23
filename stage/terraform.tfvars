@@ -1,1 +1,0 @@
-export TF_VAR_dev_bucket = "dev-env176"
