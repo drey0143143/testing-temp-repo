@@ -3,7 +3,7 @@ remote_state {
   config = {
     bucket         = "my-bucket-prodenv"
     key            = "${path_relative_to_include()}/terraform.tfstate"
-    role_arn       = "arn:aws:iam::133666418894:role/admin_role"
+    role_arn       = "arn:aws:iam::452012047556:role/admin_role"
     region         = "us-east-1"
     encrypt        = true
     dynamodb_table = "my-lock-table"
