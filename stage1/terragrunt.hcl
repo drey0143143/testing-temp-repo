@@ -1,7 +1,7 @@
 remote_state {
   backend = "s3"
   config = {
-    bucket         = "my-bucket-prodenv"
+    bucket         = "my-bucket-prod-env143"
     key            = "${path_relative_to_include()}/terraform.tfstate"
     role_arn       = "arn:aws:iam::452012047556:role/admin_role"
     region         = "us-east-1"
