@@ -10,7 +10,7 @@ resource "aws_vpc" "test" {
 resource "aws_kms_key" "abcdef" {
   description             = "KMS key 1"
   deletion_window_in_days = 10
-}
+}s
 
 resource "aws_kms_alias" "a" {
   name          = "alias/myolukey-actions"
